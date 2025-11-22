@@ -26,5 +26,6 @@ DOMAIN,ck-content.imgix.net
 DOMAIN-SUFFIX,experian.com
 DOMAIN-SUFFIX,americanexpress.com
 DOMAIN-SUFFIX,aexp-static.com
-DOMAIN-SUFFIX,fico.com
+DOMAIN-SUFFIX,myfico.com
 DOMAIN-SUFFIX,nextinsure.com
+DOMAIN-SUFFIX,qualaroo.com
