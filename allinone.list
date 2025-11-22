@@ -1,0 +1,29 @@
+# NAME: USBank
+# AUTHOR: devinqiu888
+# REPO: https://github.com/devinqiu888/ios_rule_script
+# UPDATED: 2025-03-05 11:04:49
+# DOMAIN: 0
+# DOMAIN-SUFFIX: 13
+# TOTAL: 13
+DOMAIN-SUFFIX,creditkarma.com
+DOMAIN-SUFFIX,online-metrix.net
+DOMAIN-SUFFIX,experian.com
+DOMAIN-SUFFIX,equifax.com
+DOMAIN-SUFFIX,capitalone.com
+DOMAIN-SUFFIX,medallia.com
+DOMAIN-SUFFIX,newrelic.com
+DOMAIN-SUFFIX,intuit.com
+DOMAIN-SUFFIX,annualcreditreport.com
+DOMAIN-SUFFIX,experian.com
+DOMAIN-SUFFIX,chase.com
+DOMAIN-SUFFIX,chasecdn.com
+DOMAIN-SUFFIX,nr-data.net
+DOMAIN-SUFFIX,sofi.com
+DOMAIN-SUFFIX,sofi.glassboxdigital.io
+DOMAIN,ck-assets.imgix.net
+DOMAIN,creditkarmacdn-a.akamaihd.net
+DOMAIN,ck-content.imgix.net
+DOMAIN-SUFFIX,experian.com
+DOMAIN-SUFFIX,americanexpress.com
+DOMAIN-SUFFIX,aexp-static.com
+DOMAIN-SUFFIX,fico.com
