@@ -1,0 +1,13 @@
+#!name = Chase ITIN 
+#!desc = 拦截 Chase 开户请求，将 SSN 字段替换为 ITIN(TIN)，使持有 ITIN 的用户可以在线完成 Chase 账户注册。
+#!system = ios, mac
+#!category = Finance
+#!author = Based on guide by bbjoe555 (Redflagdeals)
+#!homepage = https://forums.redflagdeals.com/members/bbjoe555-1708943/
+#!icon = https://www.chase.com/etc/designs/chase-ux/favicon-57.png
+
+[Script]
+Chase ITIN Fix = type=http-request,pattern=https://secure\.chase\.com/svc/wl/auth/public/v4/user/enrollment/form/list,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/local/chase-itin/main/chase-itin.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% secure.chase.com
