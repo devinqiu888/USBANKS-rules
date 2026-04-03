@@ -7,7 +7,7 @@
 #!icon = https://www.chase.com/etc/designs/chase-ux/favicon-57.png
 
 [Script]
-Chase ITIN Fix = type=http-request,pattern=https://secure\.chase\.com/svc/wl/auth/public/v4/user/enrollment/form/list,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/local/chase-itin/main/chase-itin.js,script-update-interval=0
+Chase ITIN Fix = type=http-request,pattern=https://secure\.chase\.com/svc/wl/auth/public/v4/user/enrollment/form/list,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/devinqiu888/USBANKS-rules/refs/heads/main/chase-itin.js,script-update-interval=0
 
 [MITM]
 hostname = %APPEND% secure.chase.com
