@@ -5,43 +5,56 @@
 # DOMAIN: 0
 # DOMAIN-SUFFIX: 13
 # TOTAL: 13
-DOMAIN-SUFFIX,creditkarma.com
+#General
 DOMAIN-SUFFIX,online-metrix.net
-DOMAIN-SUFFIX,experian.com
-DOMAIN-SUFFIX,equifax.com
-DOMAIN-SUFFIX,capitalone.com
-DOMAIN-SUFFIX,medallia.com
-DOMAIN-SUFFIX,newrelic.com
-DOMAIN-SUFFIX,intuit.com
-DOMAIN-SUFFIX,annualcreditreport.com
-DOMAIN-SUFFIX,experian.com
-DOMAIN-SUFFIX,chase.com
-DOMAIN-SUFFIX,chasecdn.com
-DOMAIN-SUFFIX,nr-data.net
-DOMAIN-SUFFIX,sofi.com
-DOMAIN-SUFFIX,sofi.glassboxdigital.io
-DOMAIN,ck-assets.imgix.net
-DOMAIN,creditkarmacdn-a.akamaihd.net
-DOMAIN,ck-content.imgix.net
-DOMAIN-SUFFIX,experian.com
-DOMAIN-SUFFIX,americanexpress.com
-DOMAIN-SUFFIX,aexp-static.com
-DOMAIN-SUFFIX,myfico.com
 DOMAIN-SUFFIX,nextinsure.com
 DOMAIN-SUFFIX,qualaroo.com
 DOMAIN-SUFFIX,apigateway.bnymellon.com
-DOMAIN-SUFFIX,fidelitydebitcard.com
-DOMAIN-SUFFIX,fidelity.com
 DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,veriff.me
 DOMAIN-SUFFIX,us.sentry.io
-DOMAIN-SUFFIX,transunion.com
-DOMAIN-SUFFIX,us.veriff.me
-DOMAIN-SUFFIX,optimizely.com
 DOMAIN-SUFFIX,datadoghq-browser-agent.com
 DOMAIN-SUFFIX,typicode.com
 DOMAIN-SUFFIX,icanhazip.com
 DOMAIN-SUFFIX,customer.io
 DOMAIN-SUFFIX,pokeapi.co
-DOMAIN-SUFFIX,joinfizz.com
+#Credit Karma
+DOMAIN-SUFFIX,creditkarma.com
+DOMAIN-SUFFIX,intuit.com
+DOMAIN,ck-assets.imgix.net
+DOMAIN,creditkarmacdn-a.akamaihd.net
+DOMAIN,ck-content.imgix.net
+#Credit Bureau
+DOMAIN-SUFFIX,experian.com
+DOMAIN-SUFFIX,equifax.com
+DOMAIN-SUFFIX,annualcreditreport.com
+DOMAIN-SUFFIX,myfico.com
+DOMAIN-SUFFIX,transunion.com
+#Capital One
+DOMAIN-SUFFIX,capitalone.com
+DOMAIN-SUFFIX,medallia.com
+DOMAIN-SUFFIX,newrelic.com
+#Chase
+DOMAIN-SUFFIX,chase.com
+DOMAIN-SUFFIX,chasecdn.com
+DOMAIN-SUFFIX,nr-data.net
+#Sofi
+DOMAIN-SUFFIX,sofi.com
+DOMAIN-SUFFIX,sofi.glassboxdigital.io
+#American Express
+DOMAIN-SUFFIX,americanexpress.com
+DOMAIN-SUFFIX,aexp-static.com
 DOMAIN-SUFFIX,amextravel.com
+#Fidelity
+DOMAIN-SUFFIX,fidelitydebitcard.com
+DOMAIN-SUFFIX,fidelity.com
+#ID Verifying
+DOMAIN-SUFFIX,us.veriff.me
+DOMAIN-SUFFIX,optimizely.com
+#Wells Fargo
+DOMAIN-SUFFIX,wellsfargomedia.com
+DOMAIN-SUFFIX,wellsfargo.com
+DOMAIN-SUFFIX,wf.com
+DOMAIN-SUFFIX,wellsfargo.net
+#OKX
+DOMAIN-SUFFIX,okx.com
