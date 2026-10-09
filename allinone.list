@@ -1,23 +1,33 @@
 # NAME: USBank
 # AUTHOR: devinqiu888
 # REPO: https://github.com/devinqiu888/USBANKS-rules
-# UPDATED: 2025-03-05 11:04:49
-# DOMAIN: 0
-# DOMAIN-SUFFIX: 13
-# TOTAL: 13
+# UPDATED: 2026-10-09
+# DOMAIN: 3
+# DOMAIN-SUFFIX: 58
+# TOTAL: 61
 #General
+# Fraud prevention / device risk assessment (LexisNexis ThreatMetrix)
 DOMAIN-SUFFIX,online-metrix.net
+# Insurance quote marketplace (QuinStreet / NextInsure)
 DOMAIN-SUFFIX,nextinsure.com
+# In-product surveys and user feedback
 DOMAIN-SUFFIX,qualaroo.com
-DOMAIN-SUFFIX,apigateway.bnymellon.com
+# Public Network Time Protocol server pool
 DOMAIN-SUFFIX,pool.ntp.org
-DOMAIN-SUFFIX,veriff.me
+# Error monitoring (US region)
 DOMAIN-SUFFIX,us.sentry.io
+# Browser real-user monitoring / performance telemetry
 DOMAIN-SUFFIX,datadoghq-browser-agent.com
+# Fake JSON REST API for demos and testing; likely not a production banking dependency
 DOMAIN-SUFFIX,typicode.com
+# Public IP address lookup / network diagnostics
 DOMAIN-SUFFIX,icanhazip.com
+# Customer messaging and lifecycle engagement platform
 DOMAIN-SUFFIX,customer.io
+# Pokémon data API; unrelated to banking, likely test or unrelated app traffic
 DOMAIN-SUFFIX,pokeapi.co
+# Product experimentation / feature testing
+DOMAIN-SUFFIX,optimizely.com
 #Credit Karma
 DOMAIN-SUFFIX,creditkarma.com
 DOMAIN-SUFFIX,intuit.com
@@ -30,31 +40,61 @@ DOMAIN-SUFFIX,equifax.com
 DOMAIN-SUFFIX,annualcreditreport.com
 DOMAIN-SUFFIX,myfico.com
 DOMAIN-SUFFIX,transunion.com
+#Major Credit Card Issuers
+#American Express
+DOMAIN-SUFFIX,americanexpress.com
+DOMAIN-SUFFIX,aexp.com
+DOMAIN-SUFFIX,aexp-static.com
+DOMAIN-SUFFIX,amextravel.com
+#Bank of America
+DOMAIN-SUFFIX,bankofamerica.com
+#Barclays US
+DOMAIN-SUFFIX,barclaycardus.com
+DOMAIN-SUFFIX,barclaysus.com
 #Capital One
 DOMAIN-SUFFIX,capitalone.com
+DOMAIN-SUFFIX,capitaloneoffers.com
+DOMAIN-SUFFIX,capitaloneshopping.com
+DOMAIN-SUFFIX,capitalonegslbex.com
+DOMAIN-SUFFIX,ivaws.com
 DOMAIN-SUFFIX,medallia.com
 DOMAIN-SUFFIX,newrelic.com
 #Chase
 DOMAIN-SUFFIX,chase.com
 DOMAIN-SUFFIX,chasecdn.com
+DOMAIN-SUFFIX,jpmorganchase.com
+DOMAIN-SUFFIX,jpmorgan.com
+DOMAIN-SUFFIX,jpmchase.com
 DOMAIN-SUFFIX,nr-data.net
-#Sofi
-DOMAIN-SUFFIX,sofi.com
-DOMAIN-SUFFIX,sofi.glassboxdigital.io
-#American Express
-DOMAIN-SUFFIX,americanexpress.com
-DOMAIN-SUFFIX,aexp-static.com
-DOMAIN-SUFFIX,amextravel.com
-#Fidelity
-DOMAIN-SUFFIX,fidelitydebitcard.com
-DOMAIN-SUFFIX,fidelity.com
-#ID Verifying
-DOMAIN-SUFFIX,us.veriff.me
-DOMAIN-SUFFIX,optimizely.com
+#Citi
+DOMAIN-SUFFIX,citi.com
+DOMAIN-SUFFIX,citibank.com
+DOMAIN-SUFFIX,citicards.com
+#Discover (Capital One brand; existing card accounts remain on Discover services)
+DOMAIN-SUFFIX,discover.com
+#FNBO
+DOMAIN-SUFFIX,fnbo.com
+#Synchrony
+DOMAIN-SUFFIX,synchrony.com
+DOMAIN-SUFFIX,synchronybank.com
+#U.S. Bank
+DOMAIN-SUFFIX,usbank.com
 #Wells Fargo
 DOMAIN-SUFFIX,wellsfargomedia.com
 DOMAIN-SUFFIX,wellsfargo.com
 DOMAIN-SUFFIX,wf.com
 DOMAIN-SUFFIX,wellsfargo.net
+#Other Common Card Programs
+#Bilt rewards and card account
+DOMAIN-SUFFIX,bilt.com
+#Fidelity Rewards Visa / Elan cardholder servicing
+DOMAIN-SUFFIX,fidelity.com
+DOMAIN-SUFFIX,elanfinancialservices.com
+DOMAIN-SUFFIX,myaccountaccess.com
+#SoFi
+DOMAIN-SUFFIX,sofi.com
+DOMAIN-SUFFIX,sofi.glassboxdigital.io
+#ID Verifying
+DOMAIN-SUFFIX,veriff.me
 #OKX
 DOMAIN-SUFFIX,okx.com

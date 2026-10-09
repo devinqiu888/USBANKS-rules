@@ -1,0 +1,8 @@
+#!name=Chase ITIN
+#!desc=根据 Chase Account Setup with ITIN 攻略，将在线注册接口请求体中的首个 ssn 替换为 tin。需启用 MITM 并信任 Surge CA，完成注册后可停用。
+
+[Script]
+Chase-ITIN = type=http-request, pattern=^https://secure\.chase\.com/svc/wl/auth/public/v4/user/enrollment/form/list(?:\?.*)?$, requires-body=true, script-path=https://raw.githubusercontent.com/devinqiu888/USBANKS-rules/main/chase-itin.js
+
+[MITM]
+hostname = %APPEND% secure.chase.com
