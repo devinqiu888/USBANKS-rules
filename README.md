@@ -1,12 +1,13 @@
 # USBANKS-rules
 
-这份规则集帮助 Surge 用户把美国银行、信用卡及 Polymarket 相关流量集中管理，并按自己的网络环境交给合适的策略组处理。你可以单独设置银行策略，避免银行流量与日常代理流量混在一起。
+这份规则集帮助 Surge 用户把美国银行和信用卡相关流量集中管理，并按自己的网络环境交给合适的策略组处理。你可以单独设置银行策略，避免银行流量与日常代理流量混在一起。
 
 ## 文件与 Raw 链接
 
 | 文件 | 主要作用 | Raw 链接 |
 | --- | --- | --- |
-| [`allinone.list`](./allinone.list) | 美国银行、信用卡及 Polymarket 相关域名的 Surge 分流规则集，将匹配流量交给指定策略组处理。 | [获取规则集](https://raw.githubusercontent.com/devinqiu888/USBANKS-rules/main/allinone.list) |
+| [`allinone.list`](./allinone.list) | 美国银行及信用卡相关域名的 Surge 分流规则集，将匹配流量交给指定策略组处理。 | [获取规则集](https://raw.githubusercontent.com/devinqiu888/USBANKS-rules/main/allinone.list) |
+| [`polymarket.list`](./polymarket.list) | Polymarket 独立分流规则，覆盖主站及对应子域名。 | [获取规则集](https://raw.githubusercontent.com/devinqiu888/USBANKS-rules/main/polymarket.list) |
 | [`chase-itin.sgmodule`](./chase-itin.sgmodule) | Chase ITIN Surge 模块，用于实现下方网站攻略中的在线账户注册请求修改功能。安装模块即可加载配套脚本，无需单独安装脚本。 | [安装模块](https://raw.githubusercontent.com/devinqiu888/USBANKS-rules/main/chase-itin.sgmodule) |
 
 ## 覆盖范围
@@ -16,7 +17,6 @@
 - **主要信用卡发卡行**：American Express、Bank of America、Barclays US、Capital One、Chase、Citi、Discover、FNBO、Synchrony、U.S. Bank 和 Wells Fargo。
 - **其他常见卡项目或持卡人服务**：Bilt、Fidelity/Elan 和 SoFi。
 - **信用与身份辅助服务**：Credit Karma、Experian、Equifax、TransUnion、AnnualCreditReport、myFICO 和 Veriff。
-- **Polymarket**：`polymarket.com`、`polymarket.us` 及其子域名，覆盖相应主站及该域名下的 API、WebSocket 等服务。
 - **通用依赖**：反欺诈、监测、消息推送、调查及其他文件中列出的服务域名。
 
 规则按机构和服务分组，包含常见美国信用卡发卡行、部分卡项目、信用报告机构，以及银行 App 可能使用的身份验证和辅助服务域名。规则使用 Surge 的 `DOMAIN` 和 `DOMAIN-SUFFIX` 类型。
@@ -50,9 +50,17 @@ US-Banks = select, DIRECT, Proxy
 
 配置完成后，在 Surge 的策略界面选择 `US-Banks`，即可统一切换本规则集中的银行流量策略。若只希望调整某一家机构，也可以把该机构对应的 `DOMAIN` / `DOMAIN-SUFFIX` 规则复制到 `[Rule]`，并指定其他策略组。
 
-## Polymarket 多端更新
+## Polymarket 独立规则集
 
-Polymarket 已加入 `allinone.list`。已订阅上述 Raw 链接的设备，在 Surge 中刷新规则集即可获取，无需更换订阅地址。Polymarket 流量会使用该 `RULE-SET` 行指定的策略组（上例为 `US-Banks`）。此规则仅控制分流，无需 MITM 或脚本。
+`polymarket.list` 独立于 `allinone.list`，覆盖 `polymarket.com`、`polymarket.us` 及其子域名，包括对应域名下的 API 和 WebSocket 服务。无需 MITM 或脚本。
+
+在现有配置的 `[Rule]` 段中添加以下规则，并放在可能优先命中的通用规则和 `FINAL` 之前：
+
+```ini
+RULE-SET,https://raw.githubusercontent.com/devinqiu888/USBANKS-rules/main/polymarket.list,Proxy
+```
+
+将 `Proxy` 替换为已有的策略或策略组名称。各设备订阅同一链接，后续刷新此规则集即可同步更新。
 
 ## Chase ITIN 模块（可选）
 
