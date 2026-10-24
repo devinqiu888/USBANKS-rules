@@ -3,8 +3,8 @@
 # REPO: https://github.com/devinqiu888/USBANKS-rules
 # UPDATED: 2026-10-24
 # DOMAIN: 3
-# DOMAIN-SUFFIX: 60
-# TOTAL: 63
+# DOMAIN-SUFFIX: 58
+# TOTAL: 61
 #General
 # Fraud prevention / device risk assessment (LexisNexis ThreatMetrix)
 DOMAIN-SUFFIX,online-metrix.net
@@ -98,6 +98,3 @@ DOMAIN-SUFFIX,sofi.glassboxdigital.io
 DOMAIN-SUFFIX,veriff.me
 #OKX
 DOMAIN-SUFFIX,okx.com
-#Polymarket
-DOMAIN-SUFFIX,polymarket.com
-DOMAIN-SUFFIX,polymarket.us
