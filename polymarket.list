@@ -1,0 +1,11 @@
+# NAME: Polymarket
+# AUTHOR: devinqiu888
+# REPO: https://github.com/devinqiu888/USBANKS-rules
+# UPDATED: 2026-10-24
+# DOMAIN-SUFFIX: 2
+# TOTAL: 2
+
+# Main website, APIs and WebSocket subdomains
+DOMAIN-SUFFIX,polymarket.com
+# US website and subdomains
+DOMAIN-SUFFIX,polymarket.us
