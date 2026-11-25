@@ -1,0 +1,22 @@
+# NAME: Hong Kong Banks
+# AUTHOR: devinqiu888
+# REPO: https://github.com/devinqiu888/USBANKS-rules
+# UPDATED: 2026-11-25
+# DOMAIN-SUFFIX: 5
+# TOTAL: 5
+
+# HSBC HK
+# Hong Kong personal and business banking
+DOMAIN-SUFFIX,hsbc.com.hk
+# HSBCnet corporate banking (shared across regions)
+DOMAIN-SUFFIX,hsbcnet.com
+
+# BOCHK
+# Bank of China (Hong Kong) website and online banking
+DOMAIN-SUFFIX,bochk.com
+# Legacy BOC credit card website; services migrated to bochk.com
+DOMAIN-SUFFIX,boci.com.hk
+
+# ZA Bank
+# Official ZA Bank website; do not match the entire ZA Group
+DOMAIN-SUFFIX,bank.za.group
