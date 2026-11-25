@@ -1,0 +1,9 @@
+# NAME: ZA Bank
+# AUTHOR: devinqiu888
+# REPO: https://github.com/devinqiu888/USBANKS-rules
+# UPDATED: 2026-11-25
+# DOMAIN-SUFFIX: 1
+# TOTAL: 1
+
+# Official ZA Bank website; do not match the entire ZA Group
+DOMAIN-SUFFIX,bank.za.group
