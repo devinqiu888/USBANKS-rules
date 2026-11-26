@@ -1,0 +1,9 @@
+# Hong Kong Wi-Fi Calling (VoWiFi)
+# ePDG discovery and carrier gateways
+DOMAIN-SUFFIX,mcc454.pub.3gppnetwork.org
+DOMAIN,wlan.three.com.hk
+# Supplemental CSL / Club SIM connectivity endpoints
+DOMAIN,csl.prod.ondemandconnectivity.com
+DOMAIN,hhk.prod.ondemandconnectivity.com
+# Match Hong Kong IPsec IKE/NAT-T traffic
+AND,((GEOIP,HK),(PROTOCOL,UDP),(OR,((DEST-PORT,500),(DEST-PORT,4500))))
